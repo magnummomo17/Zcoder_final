@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hedvig+Letters+Serif:opsz@12..24&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+
+body {
+  margin: 0px;
+  padding: 0px;
+  min-width: 700px;
+  color: var(--batch);
+  background-color: #f9f5f5;
+  --primary: #dbcee8;
+  --secondary: salmon;
+  --hover: #fcf6e1;
+  --batch: #693a1e;
+  --third: #162114;
+  --white: white;
+  --black: black;
+  --offwhite: #fefefe;
+  /* --gray : #0f0a19; */
+}
+
+.dark-mode {
+  --primary: #383838;
+  background-color: #252525;
+  --batch: #5cafff;
+  --third: white;
+  --white: rgb(77, 77, 77);
+  --black: white;
+  --offwhite: rgb(65, 65, 65);
+  --hover: rgba(123, 123, 123, 0.8);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input,
+textarea {
+  background-color: var(--white);
+  color: var(--third);
+  border: 1px solid;
+}
+
+button:hover {
+  background-color: var(--hover);
+}
+
+/* navbar starts here */
+.navbar-container {
+  height: 50px;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Hedvig Letters Serif', serif;
+  text-align: center;
+  position: relative;
+}
+
+.navbar-container a {
+  text-decoration: none;
+  color: var(--batch);
+}
+
+.container {
+  display: flex;
+  float: left;
+  padding: 5px 20px;
+  font-size: 10px;
+}
+
+.navbar-container nav {
+  /* display: block; */
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  /* align-items: center; */
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+
+.navbar-container button {
+  border: none;
+  font-size: 15px;
+  color: inherit;
+  background-color: inherit;
+  font-family: inherit;
+}
+
+
+
+
+
+/* menu bar starts here */
+.menu {
+  background-color: var(--primary);
+  color: var(--third);
+  margin-top: -40px;
+  font-family: 'Bebas Neue', sans-serif;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 10px;
+  display: flex;
+  position: relative;
+}
+
+.ul-menu {
+  list-style-type: none;
+  overflow: hidden;
+  width: 80%;
+  /* margin: auto; */
+}
+
+.li-menu .link-menu {
+  display: block;
+  /* text-align: center; */
+  text-decoration: none;
+  color: inherit;
+  font-size: 30px;
+  padding: 10px 16px;
+  max-height: 80px;
+}
+
+.li-menu {
+  float: left;
+}
+
+
+
+
+
+/* login page */
+.login {
+  /* background-color: blueviolet; */
+  /* color: black; */
+  width: 60%;
+  min-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid var(--primary);
+  padding-left: 40px;
+  font-family: "Merriweather", serif;
+
+}
+
+.login h1 {
+  font-size: 30px;
+}
+
+.login label {
+  font-size: 23px;
+}
+
+.login input[type=text],
+input[type=email],
+input[type=password] {
+  width: 95%;
+  display: block;
+  padding: 10px;
+}
+
+.login button {
+  background-color: var(--primary);
+  border: none;
+  color: var(--third);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+/* error */
+input.error,
+textarea.error {
+  border: 2px solid var(--secondary);
+}
+
+
+/* problems */
+.problems,
+.home {
+  width: 70%;
+  margin: 0px auto 50px auto;
+  padding: 20px 30px;
+  font-family: "Merriweather", serif;
+}
+
+.addd {
+  /* background-color: #eee; */
+  text-decoration: none;
+  color: inherit;
+  font-size: 20px;
+  border: 1px solid var(--black);
+  padding: 10px 20px;
+  width: 98%;
+  font-family: inherit;
+}
+
+.addd:hover {
+  background-color: var(--hover);
+  color: var(--third);
+}
+
+.problem {
+  border: 2px solid var(--primary);
+  padding: 20px 30px;
+  margin-bottom: 20px;
+  overflow: auto;
+  background-color: var(--offwhite);
+}
+
+.post-text {
+  border: none;
+  overflow: hidden;
+  font-size: 15px;
+  font-family: inherit;
+  resize: none;
+  /* background-color: var(--offwhite); */
+  /* color: black; */
+  padding: 10px 20px;
+}
+
+
+.add-prob {
+  width: 70%;
+  margin: 0px auto 50px auto;
+  padding: 20px 30px;
+  border: 2px solid var(--primary);
+  font-family: "Merriweather", serif;
+}
+
+.add-prob label {
+  font-size: 23px;
+}
+
+.add-prob input[type=text],
+input[type=number] {
+  width: 98%;
+  min-height: 40px;
+}
+
+.add-prob input[type=checkbox] {
+  accent-color: var(--primary);
+}
+
+.add-prob textarea {
+  width: 98%;
+  min-height: 200px;
+  font-size: 15px;
+}
+
+.add-prob button {
+  padding: 5px;
+  font-size: 20px;
+  font-family: inherit;
+  background-color: #eee;
+  border: 1px solid var(--black);
+  width: 98%;
+}
+
+.add-prob button:hover {
+  background-color: var(--hover);
+  color: var(--third);
+}
+
+
+/* accordion */
+.accordion {
+  background-color: #efefef;
+  color: var(--batch);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+  background-color: var(--hover);
+  color: var(--third);
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: var(--offwhite);
+  color: var(--batch);
+  transition: max-height 0.2s ease-out;
+  overflow: hidden;
+}
+
+.delete-icon {
+  border: 1px solid var(--black);
+  width: 30px;
+  height: 30px;
+  float: right;
+}
+
+
+/* comments section */
+.comment-section {
+  padding: 10px;
+}
+
+.add-comment {
+  width: 98%;
+  margin-top: 10px;
+  /* overflow: auto; */
+  height: 40px;
+  /* background-color: aqua; */
+}
+
+.add-comment input {
+  width: calc(98% - 40px);
+  height: inherit;
+  padding-left: 10px;
+  border: 1px solid;
+  vertical-align: bottom;
+  border-right: none;
+}
+
+.add-comment button {
+  width: 40px;
+  height: inherit;
+  background-color: #eee;
+  vertical-align: middle;
+  border: 1px solid;
+  border-left: none;
+}
+
+.add-comment button:hover {
+  background-color: var(--hover);
+}
+
+.other-user-comment {
+  width: 100%;
+  /* background-color: rgb(255, 244, 245); */
+  border-left: 5px solid var(--primary);
+  padding-left: 10px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-bottom: 10px;
+}
+
+.same-user-comment {
+  width: 100%;
+  /* background-color: rgb(255, 244, 245); */
+  border-right: 5px solid var(--primary);
+  /* float: right; */
+  text-align: right;
+  padding-right: 10px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-bottom: 10px;
+}
+
+.same-user-comment:hover,
+.other-user-comment:hover {
+  background-color: var(--hover);
+}
+
+.view-comments {
+  border: none;
+  color: rgb(64, 64, 64);
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+
+/* search bar */
+.search-bar {
+  right: 20px;
+  top: calc(100% - 65px);
+  position: absolute;
+}
+
+
+.search-bar input[type=text] {
+  height: 35px;
+  border: 1px solid;
+  border-right: none;
+  vertical-align: bottom;
+}
+
+
+.search-bar button {
+  height: 35px;
+  width: 40px;
+  border: 1px solid;
+  border-left: none;
+}
+
+
+/* user-links */
+.user-link {
+  color: var(--secondary);
+}
+
+.user-link:hover {
+  color: #dbcee8;
+}
+
+/* profile */
+.profile {
+  width: 70%;
+  margin: auto;
+  background-color: var(--offwhite);
+  padding: 20px 30px;
+  color: var(--batch);
+}
+
+.update-profile {
+  width: 70%;
+  margin: auto;
+  padding: 20px 30px;
+  font-size: larger;
+  background-color: var(--offwhite);
+}
+
+.update-profile input,
+textarea {
+  width: 98%;
+  height: 40px;
+  font-size: 20px;
+}
+
+.update-profile textarea {
+  height: 150px;
+}
+
+
+/* calendar begins here */
+.calendar {
+  background-color: var(--offwhite);
+  width: 70%;
+  margin: auto;
+  padding: 20px 30px;
+  min-height: 600px;
+}
+
+
+
+/* playground */
+.playground {
+  margin: auto;
+  padding: 0px;
+  background-color: var(--gray);
+  padding: 8px 18px;
+  color: var(--batch);
+  width: 80%;
+  min-height: 800px;
+}
+
+.editor {
+  width: 50%;
+}
+
+.code-output {
+  width: calc(50% - 10px);
+  margin-left: 10px;
+  float: right;
+  /* background-color: blueviolet; */
+}
+
+.output {
+  height: 75vh;
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 0px 10px;
+}
+
+.error {
+  border-color: tomato;
+  color: tomato;
+}
+
+.lines-of-code {
+  height: .2rem;
+  font-weight: 600;
+}
+
+
+/* 404 page */
+.four-o-four {
+  width: 70%;
+  margin: auto;
+  background-color: var(--offwhite);
+  padding: 20px 30px;
+}
+
+.four-o-four button {
+  border-radius: 10px;
+}
